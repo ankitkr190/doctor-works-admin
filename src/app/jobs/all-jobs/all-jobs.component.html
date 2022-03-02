@@ -3,7 +3,9 @@
         <div class="row align-items-center">
             <div class="col-sm-6">
                 <h4 class="page-title">All Jobs</h4>
+                
             </div>
+
             <div class="col-sm-6">
                 <ol class="breadcrumb float-right">
                     <li><a routerLink="/dashboard">Dashboard</a></li>
@@ -12,16 +14,22 @@
                     <li><i class='bx bx-chevron-right'></i></li>
                     <li class="breadcrumb-item">All Jobs</li>
                 </ol>
+            
             </div>
 
         </div>
+       
         
         </div>
 </div>
 
+<div class="col-xl-12">
+    <a routerLink="/jobs/add-job" class="btn btn-primary">Add Job</a>      
+</div>
 
 
-  <div class="row">
+
+  <div class="row mt-4">
     <div class="col-sm-2">
         <div class="content">
             <h6 class="text-primary">Filter Data</h6>
@@ -97,8 +105,12 @@
             </div>
       </div>
       </div>
+      
       <div class="col-sm-10 mt-2">
+          
         <div class="row">
+
+
     
             <!-- Add Model-->
             <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -139,7 +151,7 @@
     
                 <div class="card m-b-30 m-t-30">
                     <div class="card-body">
-                        <h4 class="mt-0 header-title mb-4"> 27 Users found</h4>
+                        <h4 class="mt-0 header-title mb-4"> 27 Jobs found</h4>
                         <div class="table-responsive ">
                             <table class="table table-hover advanced-web-table">
                                 <thead>
@@ -148,6 +160,7 @@
                                         <th scope="col">Speciality</th>
         
                                         <th scope="col">Designation</th>
+                                        
                                         <th scope="col">Location</th>
                                         <th scope="col">Hospital Name</th>
                                         <th scope="col">Hospital Type</th>
@@ -173,10 +186,10 @@
                                        
                                         <td>
                                            
-                                            <a routerLink="/" class="action-btn" >
+                                            <a routerLink="/jobs/view-job" class="action-btn" >
                                                 <i class='bx bx-show'></i>
                                                </a>
-                                           <a  class="action-btn" data-toggle="modal" data-target="#editModal" >
+                                           <a  routerLink="/jobs/edit-job" class="action-btn" data-toggle="modal" data-target="#editModal" >
                                             <i class='bx bx-edit'></i>
                                            </a>
     

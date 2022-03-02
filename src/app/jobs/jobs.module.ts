@@ -5,6 +5,9 @@ import { AllJobsComponent } from './all-jobs/all-jobs.component';
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AddJobComponent } from './add-job/add-job.component';
+import { EditJobComponent } from './edit-job/edit-job.component';
+import { ViewJobComponent } from './view-job/view-job.component';
 
 
 
@@ -12,7 +15,10 @@ import { CommonModule } from '@angular/common';
   declarations: [
     AllJobsComponent,
     AppliedJobsComponent,
-    DeletedJobsComponent
+    DeletedJobsComponent,
+    AddJobComponent,
+    EditJobComponent,
+    ViewJobComponent
    
   ],
   imports: [
