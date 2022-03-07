@@ -7,139 +7,18 @@
 
 
 <div id="wrapper">
-  <!-- Top Bar Start -->
-  <div class="topbar">
-      <!-- LOGO -->
-      <div class="topbar-left">
-          <a href="#" class="logo">
-              <span class="logo-light">
-                      Doctor Works
-                  </span>
-          </a>
-          <i class='bx bx-menu open-left'></i>
-      </div>
-      <nav class="navbar-custom">
-          
-          <ul class="navbar-right list-inline float-right mb-0">
+  
+  <app-header></app-header>
 
-              <li class="dropdown notification-list list-inline-item">
-                  <div class="dropdown notification-list nav-pro-img">
-                      <a class="dropdown-toggle nav-link arrow-none nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                          <img src="assets/images/user-4.jpg" alt="user" class="rounded-circle">
-                      </a>
-                      <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
-                          <!-- item-->
-                          <a class="dropdown-item" href="#"><i class=""></i></a>
-                          <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings"></i> Settings</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item text-danger"><i class='bx bx-power-off text-danger'></i> Logout</a>
-                      </div>
-                  </div>
-              </li>
-          </ul>
-          <ul class="list-inline menu-left mb-0">
-              <li class="float-left">
-                 
-              </li>
-              <li class="d-none d-md-inline-block">
-                  <form role="search" class="app-search">
-                      <div class="form-group mb-0">
-                          <input type="text"  class="table-filter form-control"  data-table="advanced-web-table" placeholder="Search..">
-                          <button><i class="bx bx-search"></i></button>
-                      </div>
-                  </form>
-              </li>
-          </ul>
-      </nav>
-  </div>
-  <!-- Top Bar End -->
-  <!-- ========== Left Sidebar Start ========== -->
-  <div class="left side-menu">
-      <div class="slimscroll-menu" id="remove-scroll">
-          <!--- Sidemenu -->
-          <div id="sidebar-menu">
-              <!-- Left Menu Start -->
-              <ul class="metismenu" id="side-menu">
-                  <li class="menu-title">Menu</li>
-                  <li>
-                      <a routerLink="/dashboard" class="waves-effect">
-                       <i class='bx bxs-dashboard'></i> <span> Dashboard </span>
-                      </a>
-                  </li>
-                  <li>
-                    <a routerLink="user/users" class="waves-effect">
-                     <i class='bx bx-user'></i> <span> Users </span>
-                    </a>
-                </li>
-                  <li>
-                    <a routerLink="/category" class="waves-effect">
-                     <i class='bx bx-category'></i> <span> Category </span>
-                    </a>
-                </li>
-                 
-
-
-
-
-
-                  <li>
-                    <a href="#" class="waves-effect">
-                      <i class='bx bx-first-aid'></i> <span> Jobs </span><span class="float-right menu-arrow"><i class='bx bxs-chevron-right'></i></span>
-                    </a>
-                    <ul class="submenu">
-                      <li><a routerLink="jobs/all-jobs">All Jobs</a></li>
-                      <li><a routerLink="jobs/applied-jobs">Applied Jobs</a></li>
-                      <li><a routerLink="jobs/deleted-jobs">Deleted Jobs</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#" class="waves-effect">
-                      <i class='bx bx-repost'></i> <span> Post </span><span class="float-right menu-arrow"><i class='bx bxs-chevron-right'></i></span>
-                    </a>
-                    <ul class="submenu">
-                      <li><a routerLink="post/cases">Cases</a></li>
-                      <li><a routerLink="post/articles">Articles</a></li>
-                      <li><a routerLink="post/polls">Polls</a></li>
-                    </ul>
-                  </li>
-
-                  <li>
-                    <a href="#" class="waves-effect">
-                      <i class='bx bxs-news'></i> <span> News </span><span class="float-right menu-arrow"><i class='bx bxs-chevron-right'></i></span>
-                    </a>
-                    <ul class="submenu">
-                      <li><a routerLink="news/posted-news">Posted News</a></li>
-                      <li><a routerLink="news/news-pages">News Pages</a></li>
-                      <li><a routerLink="news/reported-news">Reported News</a></li>
-                    </ul>
-                  </li>
-
-              </ul>
-          </div>
-          <!-- Sidebar -->
-          <div class="clearfix"></div>
-      </div>
-      <!-- Sidebar -left -->
-  </div>
-  <!-- Left Sidebar End -->
-  <!-- ============================================================== -->
-  <!-- Start right Content here -->
-  <!-- ============================================================== -->
+  <app-sidebar></app-sidebar>
+  
   <div class="content-page">
-      <!-- Start content -->
 
       <div class="content">
           <router-outlet></router-outlet>
-
-
       </div>
 
-      <!-- content -->
-      <footer class="footer">
-          ©2022 Doctor Works  <span class="d-none d-sm-inline-block"> <i class="mdi mdi-heart text-danger"></i> </span>.
-      </footer>
+     <app-footer></app-footer>
   </div>
-  <!-- ============================================================== -->
-  <!-- End Right content here -->
-  <!-- ============================================================== -->
+  
 </div>
